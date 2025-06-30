@@ -1,9 +1,9 @@
-PRISM.AMADO - PASSO A PASSO PARA EXECUTAR O PROJETO EM OUTRO COMPUTADOR
+PRISM.AMADO - PASSO A PASSO PARA EXECUTAR O PROJETO 
 
 Requisitos:
 -------------
 1. Node.js instalado (https://nodejs.org)
-2. Editor de código (opcional, ex: VS Code)
+2. Editor de código (opcional)
 3. Terminal ou prompt de comando
 
 Como Rodar o Projeto:
