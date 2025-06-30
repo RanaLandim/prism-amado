@@ -46,4 +46,11 @@ Estrutura esperada do projeto:
   - formulario-denuncia.html
   - imagens/
 
+## Integrantes
+
+- Rana Landim 
+- Vinicius Brittes
+- Lucca Batista
+- Guilherme Lima
+- Gabriel Carvalho
 
