@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(16, 16, 16);
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: rgb(17, 16, 16);
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 20%;
+}
+
+.menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu a {
+  color: whitesmoke;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: #3f649c;
+}
+
+.menu .btn-menu {
+  background-color: #9344d3;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+}
+
+.menu .btn-menu:hover {
+  background-color: #6783ac;
+}
+
+section {
+  padding: 100px 0 80px;
+  border-top: 1px solid #333;
+}
+
+section.main {
+  background-image: url("img/background-lgbt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main__cta {
+  width: 100%;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.main__cta h2 {
+  color: rgb(234, 190, 252);
+  font-size: 40px;
+}
+
+.main__cta p {
+  color: #ccc;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.main__cta button {
+  background-color: #9344d3;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diferencial-single {
+  border-radius: 10px;
+  background-color: rgb(17, 16, 16);
+  width: 23%;
+  margin-right: 2%;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+}
+
+.diferencial-single h2 {
+  color: rgb(234, 190, 252);
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.diferencial-single p {
+  color: gray;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.chamada-sobre {
+  width: 100%;
+  text-align: center;
+}
+
+.chamada-sobre h2 {
+  color: rgb(234, 190, 252);
+  text-transform: uppercase;
+}
+
+.chamada-sobre p {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+
+.conteudo-sobre {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.evento {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.evento img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+section.conquistas {
+  background-color: #9344d3;
+  padding: 40px 0;
+}
+
+.conquista-single {
+  width: 22%;
+  margin-right: 3%;
+  text-align: center;
+  color: rgb(234, 190, 252);
+}
+
+.conquista-single h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#contato .conteudo-sobre p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+#contato .conteudo-sobre a {
+  color: #9344d3;
+  text-decoration: none;
+}
+
+#contato .conteudo-sobre a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .diferencial-single,
+  .evento,
+  .conquista-single {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .logo, .menu {
+    width: 100%;
+  }
+}
+
+/* ESTILOS PARA FORMULÁRIO E CANAL DE DENÚNCIA */
+#formulario, 
+#canal_denuncia {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  border-top: 1px solid #333;
+}
+
+#formulario .center,
+#canal_denuncia .center {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#formulario .chamada-sobre,
+#canal_denuncia .chamada-sobre {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#formulario h1,
+#canal_denuncia h2 {
+  color: #c184f5;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#formulario p,
+#canal_denuncia p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ESTILOS COMUNS AOS FORMULÁRIOS */
+#formulario form,
+#canal_denuncia form {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#formulario label,
+#canal_denuncia label {
+  display: block;
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-align: left;
+}
+
+#formulario input,
+#canal_denuncia input,
+#formulario textarea,
+#canal_denuncia textarea,
+#formulario select,
+#canal_denuncia select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  border: 2px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+#formulario input:focus,
+#canal_denuncia input:focus,
+#formulario textarea:focus,
+#canal_denuncia textarea:focus,
+#formulario select:focus,
+#canal_denuncia select:focus {
+  border-color: #9344d3;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(147, 68, 211, 0.2);
+}
+
+/* MENSAGENS DE ERRO (inicialmente ocultas) */
+.span-requerid {
+  display: none;
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* ESTILOS PARA CHECKBOX E RADIO */
+#formulario .box-select,
+#canal_denuncia .box-select {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 15px 0;
+}
+
+#formulario .box-select div,
+#canal_denuncia .box-select div {
+  display: flex;
+  align-items: center;
+}
+
+#formulario input[type="checkbox"],
+#formulario input[type="radio"],
+#canal_denuncia input[type="checkbox"],
+#canal_denuncia input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+#formulario input[type="checkbox"] + label,
+#formulario input[type="radio"] + label,
+#canal_denuncia input[type="checkbox"] + label,
+#canal_denuncia input[type="radio"] + label {
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* BOTÕES */
+#formulario button,
+#canal_denuncia button {
+  background-color: #9344d3;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#formulario button:hover,
+#canal_denuncia button:hover {
+  background-color: #7a36b5;
+  transform: translateY(-2px);
+}
+
+#formulario button:active,
+#canal_denuncia button:active {
+  transform: translateY(0);
+}
+
+/* ESTILOS ESPECÍFICOS PARA O CANAL DE DENÚNCIA */
+#canal_denuncia form {
+  border-left: 4px solid #9344d3;
+}
+
+#canal_denuncia form > p {
+  color: #fff;
+  font-weight: 600;
+  margin: 25px 0 15px;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  #formulario, 
+  #canal_denuncia {
+    padding: 40px 0;
+  }
+  
+  #formulario form,
+  #canal_denuncia form {
+    padding: 25px;
+  }
+  
+  #formulario .box-select,
+  #canal_denuncia .box-select {
+    grid-template-columns: 1fr;
+  }
+  
+  #formulario h1,
+  #canal_denuncia h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #formulario form,
+  #canal_denuncia form {
+    padding: 20px 15px;
+  }
+  
+  #formulario input,
+  #canal_denuncia input,
+  #formulario textarea,
+  #canal_denuncia textarea,
+  #formulario select,
+  #canal_denuncia select {
+    padding: 10px 12px;
+  }
+}
+
+/* Centraliza apenas os títulos principais */
+#formulario .chamada-sobre h1,
+#canal_denuncia .chamada-sobre h2 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+/* Adiciona um efeito decorativo opcional abaixo dos títulos */
+#formulario .chamada-sobre h1::after,
+#canal_denuncia .chamada-sobre h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #9344d3;
+}
+
+/* Mantém o subtítulo e o restante do conteúdo alinhado à esquerda */
+#formulario .chamada-sobre p,
+#canal_denuncia .chamada-sobre p,
+#formulario form,
+#canal_denuncia form{
+  text-align: left;
+}
+
+#canal_denuncia input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9344d3;
+  border-radius: 4px;
+  position: relative;
+}
+
+#canal_denuncia input[type="checkbox"]:checked {
+  background-color: #9344d3;
+}
+
+#canal_denuncia input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  position: absolute;
+  left: 2px;
+  top: -2px;
+}
+
+/* Estilo para os containers dos checkboxes */
+#canal_denuncia form > div {
+  display: flex;          /* Transforma em flex container */
+  align-items: center;    /* Alinha verticalmente */
+  margin-bottom: 10px;    /* Espaço entre itens */
+}
+
+/* Estilo para os checkboxes */
+#canal_denuncia input[type="checkbox"] {
+  width: auto;           /* Remove largura fixa */
+  margin-right: 10px;    /* Espaço entre checkbox e texto */
+  margin-bottom: 0;      /* Remove margem inferior */
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.contato-lista li {
+  margin-bottom: 1rem;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.contato-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Espaço entre os itens */
+  justify-content: center; /* Centraliza na horizontal */
+}
+
+.contato-lista li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 28px;
+  font-size: 1.1rem;
+}
+
+/* Ícones antes do texto */
+.contato-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Ícones individuais */
+.contato-lista li.email::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png');
+}
+
+.contato-lista li.instagram::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+.contato-lista li.endereco::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/684/684908.png');
+}
+
+
+.depoimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.depoimento-box {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.depoimento-box:hover {
+  transform: translateY(-4px);
+}
+
+.depoimento-box img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.depoimento-box .texto p {
+  margin: 0.5rem 0;
+  font-style: italic;
+  color: #444;
+}
+
+#contato {
+  text-align: center;
+}
+
+#contato .center {
+  justify-content: center;
+}
+
+#contato .conteudo-sobre {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}

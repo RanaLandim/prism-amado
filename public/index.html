@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prism.Amado</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="center">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo Prism.Amado" style="height: 50px;">
+    </div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#oficinas">Oficinas</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#canal_denuncia">Canal de denuncia</a>
+      <a href="#contato">Contato</a>
+      <a href="#formulario" class="btn-menu">Inscrever-se</a>
+    </div>
+  </div>
+</header>
+
+<section class="main" id="home">
+  <div class="center">
+    <div class="main__cta">
+      <h2>PrismAmado</h2>
+      <p>Um espaço para conexão, inclusão e protagonismo.</p>
+      <button onclick="location.href='#formulario'">Começar</button>
+    </div>
+    <div class="diferenciais">
+      <div class="diferencial-single">
+        <h2>Inclusão</h2>
+        <p>Ambiente seguro e acolhedor para todos.</p>
+      </div>
+      <div class="diferencial-single">
+        <h2>Formação</h2>
+        <p>Oficinas práticas com foco em desenvolvimento pessoal.</p>
+      </div>
+      <div class="diferencial-single">
+        <h2>Eventos</h2>
+        <p>Encontros, rodas de conversa e celebrações.</p>
+      </div>
+      <div class="diferencial-single">
+        <h2>Apoio</h2>
+        <p>Canal de denúncias e suporte emocional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Sobre Nós</h2>
+      <p>Conheça o <strong>Prism.Amado</strong>: um projeto dedicado a criar espaços de escuta, aprendizado e celebração para a comunidade LGBTQIAPN+.</p>
+    </div>
+
+    <div class="conteudo-sobre">
+      <p>
+        Nosso objetivo é claro: <strong>incentivar a autonomia, o respeito e a valorização da diversidade</strong> em todas as suas formas. 
+        Fazemos isso através de <strong>ações educativas e culturais</strong> que promovem o diálogo e fortalecem os laços da nossa comunidade. 
+        Venha construir esse futuro mais inclusivo conosco!
+      </p>
+
+      
+
+      <h3>Missão</h3>
+      <p>
+        Criar e promover <strong>espaços seguros e acolhedores</strong> para a comunidade LGBTQIAPN+, oferecendo ferramentas para o 
+        <strong>desenvolvimento pessoal</strong>, a <strong>educação</strong> e o <strong>engajamento cultural</strong>, sempre pautados pelo respeito e pela valorização da diversidade.
+      </p>
+
+
+
+      <h3>Visão</h3>
+      <p>
+        Ser referência em Salvador e no Brasil como uma plataforma inovadora e impactante na 
+        <strong>promoção dos direitos e do bem-estar</strong> da comunidade LGBTQIAPN+, contribuindo para uma sociedade mais justa, equitativa e inclusiva.
+      </p>
+
+
+
+      <h3>Valores</h3>
+      <ul>
+        <li><strong>Diversidade e Inclusão:</strong> Acreditamos que todas as identidades e expressões devem ser respeitadas e celebradas.</li>
+        <li><strong>Empoderamento:</strong> Fomentamos a autonomia e o protagonismo individual e coletivo.</li>
+        <li><strong>Respeito:</strong> Promovemos um ambiente de escuta ativa e consideração mútua.</li>
+        <li><strong>Acolhimento:</strong> Oferecemos um espaço seguro e livre de julgamentos para todos.</li>
+        <li><strong>Educação e Conhecimento:</strong> Incentivamos o aprendizado contínuo e a troca de saberes como ferramentas de transformação.</li>
+        <li><strong>Comunidade:</strong> Fortalecemos os laços e a rede de apoio entre as pessoas LGBTQIAPN+.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="conquistas">
+  <div class="center">
+    <div class="conquista-single">
+      <h2>+100</h2>
+      <p>Participantes</p>
+    </div>
+    <div class="conquista-single">
+      <h2>+20</h2>
+      <p>Eventos realizados</p>
+    </div>
+    <div class="conquista-single">
+      <h2>+30</h2>
+      <p>Oficinas ministradas</p>
+    </div>
+    <div class="conquista-single">
+      <h2>+50</h2>
+      <p>Depoimentos recebidos</p>
+    </div>
+  </div>
+</section>
+
+<section id="eventos">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Eventos</h2>
+    </div>
+    <div class="conteudo-sobre" id="eventos-container">
+      <!-- Aqui os eventos serão inseridos via API -->
+    </div>
+  </div>
+</section>
+
+
+<section id="oficinas">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Oficinas</h2>
+    </div>
+    <div class="conteudo-sobre">
+      <div class="evento">
+        <img src="img/oficina1.jpg" alt="Oficina 1" />
+        <p>Produção de conteúdo digital.</p>
+      </div>
+      <div class="evento">
+        <img src="img/oficina2.jpg" alt="Oficina 2" />
+        <p>Direitos e Cidadania LGBTQIAPN+.</p>
+      </div>
+      <div class="evento">
+        <img src="img/oficina3.jpg" alt="Oficina 3" />
+        <p>Autoconhecimento e expressão corporal.</p>
+      </div>
+      <div class="evento">
+        <img src="img/oficina4.jpg" alt="Oficina 4" />
+        <p>Oficina de audiovisual comunitário.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Depoimentos</h2>
+    </div>
+    <div class="conteudo-sobre depoimentos-container">
+
+      <div class="depoimento-box">
+        <img src="https://img.icons8.com/color/96/person-male.png" alt="Avatar cartoon 1" />
+        <div class="texto">
+          <p>"Participar do projeto me fez sentir parte de algo maior!"</p>
+          <p>"Respeito para todos nós!!"</p>
+        </div>
+      </div>
+
+      <div class="depoimento-box">
+        <img src="https://img.icons8.com/color/96/person-female.png" alt="Avatar cartoon 2" />
+        <div class="texto">
+          <p>"Um lugar de acolhimento! Obrigado!"</p>
+          <p>"Não é preciso ser gay para ser contra a homofobia"</p>
+        </div>
+      </div>
+
+      <div class="depoimento-box">
+        <img src="https://img.icons8.com/color/96/user-male-circle--v1.png" alt="Avatar cartoon 3" />
+        <div class="texto">
+          <p>"Aqui eu me encontrei. Obrigado por esse espaço!"</p>
+          <p>"Nunca imaginei algo tão acolhedor."</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<section id="canal_denuncia">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Denúncia</h2>
+      <p>Enfrente a discriminação. Sua voz importa.</p>
+      <form id="form-denuncia" action="api/denunciar" method="POST">
+      <p>Preencha o formulário abaixo para registrar sua denúncia.</p><br>
+             <p>Nome </p>
+            <div>
+                <input type="text" placeholder="Digite seu nome Completo" class="inputs" required id="denuncia-nome" name="nome">
+                <span class="span-requerid">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+
+            <p>Nome Social </p>
+            <div>
+                <input type="text" placeholder="Digite seu nome social caso deseje" class="inputs" id="denuncia-nomesocial" name="nomesocial" >
+                <span class="span-requerid">Nome Social deve ter no mínimo 3 caracteres</span>
+            </div>
+
+            <p>Email </p>
+            <div>
+                <input type="email" placeholder="Digite seu e-mail" class="inputs" required id="denuncia-email" name="email">
+                <span class="span-requerid">Digite um e-mail valido</span>
+            </div>
+
+            <p>Proteja Nossa Comunidade</p>
+          <div>
+            <label for="tipoDenuncia">Selecione o tipo de denúncia:</label>
+            <select id="tipoDenuncia" name="tipoDenuncia" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="discurso_odio">Discurso de ódio / LGBTfobia - Comentários ou publicações com teor homofóbico, transfóbico, bifóbico, etc.</option>
+                <option value="ameacas_violencia">Ameaças de violência - Ameaças explícitas ou implícitas contra membros da comunidade.</option>
+                <option value="violacao_termos">Violação dos termos de uso - Ações que desrespeitam as regras do site.</option>
+                <option value="spam">Spam ou conteúdo irrelevante - Divulgação repetitiva de links, promoções ou mensagens fora de contexto.</option>
+                <option value="bug_malicioso">Bug sendo explorado maliciosamente - Falhas no sistema sendo usadas para causar dano ou acessar informações privadas.</option>
+            </select>
+          </div>
+          <button type="submit">Enviar Denuncia</button>
+          </form>
+    </div>
+  </div>
+</section>
+
+<section id="formulario">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h1>Inscreva-se</h1>
+      <form id="form-inscricao" action="api/inscricao" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" placeholder="Digite seu nome" class="inputs" id="inscricao-nome" name="nome" required />
+          <span class="span-requerid">Nome deve ter no mínimo 3 caracteres</span>
+        </div>
+
+        <div class="form-group">
+          <label for="nomesocial">Nome social</label>
+          <input type="text" placeholder="Digite seu nome social caso deseje" class="inputs" id="nomesocial" name="nomesocial"/>
+          <span class="span-requerid">Nome Social deve ter no mínimo 3 caracteres</span>
+        </div>
+
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" placeholder="Digite seu CPF" class="inputs" id="inscricao-cpf" name="cpf" required />
+          <span class="span-requerid" id="cpf-feedback">O CPF deve ser válido.</span>
+        </div>
+
+      <p>Telefone</p>
+      <div>
+        <input type="tel" placeholder="Digite seu telefone" class="inputs" id="inscricao-telefone" name="telefone" required/>
+        <span class="span-requerid">Digite um telefone válido</span>
+      </div>
+
+      <p>E-mail</p>
+      <div>
+        <input type="email" placeholder="Digite seu e-mail" class="inputs" id="inscricao-email" name="email" required/>
+        <span class="span-requerid">Digite um e-mail válido</span>
+      </div>
+
+      <p>Orientação Sexual</p>
+      <div class="box-select">
+      <select name="orientacaoSexual" id="orientacaoSexual" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="gay">Gay</option>
+        <option value="lesbica">Lésbica</option>
+        <option value="bissexual">Bissexual</option>
+        <option value="pansexual">Pansexual</option>
+        <option value="assexual">Assexual</option>
+        <option value="heterossexual">Heterossexual</option>
+        <option value="queer">Queer</option>
+        <option value="questionando">Questionando</option>
+        <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+      </select>
+      </div>
+
+
+      <p>Pronomes de Tratamento</p>
+      <div class="box-select">
+      <select name="pronomesTratamento" id="pronomesTratamento" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="eleDele">Ele/Dele</option>
+        <option value="elaDela">Ela/Dela</option>
+        <option value="eluDelu">Elu/Delu</option>
+        <option value="iliDile">Ile/Dile</option>
+        <option value="outro">Outro</option>
+      </select>
+      </div>
+
+      <label for="evento">Evento</label>
+        <select id="inscricao-evento" name="evento" required>
+          <option value="" disabled selected>Selecione</option>
+        <!-- opções dinâmicas serão inseridas aqui -->
+        </select>
+
+      <label for="oficina">Oficina</label>
+      <select id="inscricao-oficina" name="oficina" required>
+        <option value="" disabled selected>Selecione</option>
+        <!-- opções dinâmicas serão inseridas aqui -->
+      </select>
+
+      <p>Preferência de Notificação</p>
+      <div class="box-select">
+        <div><input type="radio" id="notificacao-site" value="site" name="preferenciaNotificacao" required /><label for="notificacao-site">Receber atualizações no site</label></div>
+        <div><input type="radio" id="notificacao-email" value="email" name="preferenciaNotificacao" /><label for="notificacao-email">Receber e-mails sobre eventos</label></div>
+      </div>
+
+      <p>Concordo com os termos e condições</p>
+      <div class="box-select">
+        <div><input type="radio" id="concordo" value="sim" name="concordancia"required /><label for="concordo">Concordo</label></div>
+        <div><input type="radio" id="nao-concordo" value="nao" name="concordancia" /><label for="nao-concordo">Não Concordo</label></div>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="sobre">
+  <div class="center">
+    <div class="chamada-sobre">
+      <h2>Contato</h2>
+      <p>Conheça nossos canais institucionais de comunicação.</p>
+    </div>
+    <div class="conteudo-sobre">
+      <ul class="contato-lista">
+        <li class="email">
+          <a href="mailto:prism.amado@projeto.org">
+            prism.amado@projeto.org
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="https://instagram.com/prism.amado" target="_blank" rel="noopener noreferrer">
+            @prism.amado
+          </a>
+        </li>
+        <li class="endereco">
+          <span>Paralela – Salvador/Bahia</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="script.js"></script>
+<script src="api.js"></script>
+
+</body>
+</html>
